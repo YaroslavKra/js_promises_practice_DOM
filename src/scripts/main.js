@@ -56,7 +56,7 @@ secondPromise
     showNotification(error.message, true);
   });
 
-const threedPromise = new Promise((resolve, reject) => {
+const thirdPromise = new Promise((resolve, reject) => {
   let leftClick = false;
   let rightClick = false;
   const chekClick = () => {
@@ -77,6 +77,6 @@ const threedPromise = new Promise((resolve, reject) => {
   });
 });
 
-threedPromise
+thirdPromise
   .then((message) => showNotification(message))
   .catch((error) => showNotification(error.message, true));
